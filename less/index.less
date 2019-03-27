@@ -79,7 +79,6 @@ html, body {
 	@border-default: 2px solid lightgray;
 
 	//MAIN CONTAINER STYLES
-	border: solid green;
 	width: 75%;
 	margin: 25px;
 	padding: 25px;
@@ -88,7 +87,6 @@ html, body {
 
 	//NESTED STYLES
 	header {
-		border: solid red;
 		display: flex;
 		justify-content: flex-end;
 		font-family: @default-font;
@@ -121,7 +119,6 @@ html, body {
 
 
 	.top-section {
-		border: solid blue;
 		background: lightgray;
 		border-radius: 5px;
 		padding: 25px;
@@ -135,7 +132,6 @@ html, body {
 	}
 
 	.middle-content {
-		border: solid yellow;
 		display: flex;
 
 		h2 {
@@ -160,6 +156,7 @@ html, body {
 		border: @border-default;
 		font-family: @default-font;
 		width: 100%;
+		margin: 0 auto;
 		text-align: left;
 
 
@@ -176,6 +173,11 @@ html, body {
 	footer {
 		.center-horizontal;
 		padding-top: 25px;
+	}
+
+	@media(max-width 500px) {
+		max-width: 100%;
+		padding: 10px;
 	}
 
 }
