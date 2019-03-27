@@ -54,6 +54,126 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+
+
 }
 
+
+
+.main-container {
+
+	//MIXINS
+	.center-horizontal () {
+		display: flex;
+		justify-content: center;
+	}
+
+	.center-vertical () {
+		display: flex;
+		align-content: center;
+	}
+
+	//VARIABLES
+	@default-font: "Open Sans", sans-serif;
+	@border-default: 2px solid lightgray;
+
+	//MAIN CONTAINER STYLES
+	border: solid green;
+	width: 75%;
+	margin: 25px;
+	padding: 25px;
+	line-height: 1.5;
+
+	//NESTED STYLES
+	header {
+		border: solid red;
+		display: flex;
+		justify-content: flex-end;
+		font-family: @default-font;
+		margin-bottom: 25px;
+
+		a {
+			padding: 25px;
+			text-decoration: none;
+			color: black;
+		}
+	}
+
+	.headshot {
+		height: 300px;
+	}
+
+	h1 {
+		font-family: @default-font;
+		font-size: 2.5rem;
+	}
+
+	h2 {
+		font-family: @default-font;
+		font-size: 1.5rem;
+	}
+
+	p {
+		font-family: @default-font;
+	}
+
+
+	.top-section {
+		border: solid blue;
+		background: lightgray;
+		border-radius: 5px;
+		padding: 25px;
+
+		button {
+			font-family: @default-font;
+			font-size: .75rem;
+			padding: 5px 0;
+			margin: 15px 0;
+		}
+	}
+
+	.middle-content {
+		border: solid yellow;
+		display: flex;
+
+		h2 {
+			font-weight: bold;
+		}
+		
+		.middle-content-section{
+			width: 49%;
+			padding: 25px;
+			li {
+				border-top: @border-default;
+				padding: 10px;
+				font-family: @default-font;
+			}
+			ul {
+				border: @border-default;
+				border-radius: 5px;
+			}
+		}		
+	}
+
+	table {
+		border: @border-default;
+		font-family: @default-font;
+		width: 100%;
+		text-align: left;
+
+		th {
+			font-weight: bold;
+		}
+		.even-row {
+			background: lightgray;
+		}
+	}
+
+
+	footer {
+		.center-horizontal;
+	}
+
+
+}

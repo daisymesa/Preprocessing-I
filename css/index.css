@@ -1,1 +1,217 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.main-container {
+  border: solid green;
+  width: 75%;
+  margin: 25px;
+  padding: 25px;
+  line-height: 1.5;
+}
+.main-container header {
+  border: solid red;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 25px;
+}
+.main-container header a {
+  padding: 25px;
+  text-decoration: none;
+  color: black;
+}
+.main-container .headshot {
+  height: 300px;
+}
+.main-container h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5rem;
+}
+.main-container h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+}
+.main-container p {
+  font-family: "Open Sans", sans-serif;
+}
+.main-container .top-section {
+  border: solid blue;
+  background: lightgray;
+  border-radius: 5px;
+  padding: 25px;
+}
+.main-container .top-section button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  padding: 5px 0;
+  margin: 15px 0;
+}
+.main-container .middle-content {
+  border: solid yellow;
+  display: flex;
+}
+.main-container .middle-content h2 {
+  font-weight: bold;
+}
+.main-container .middle-content .middle-content-section {
+  width: 49%;
+  padding: 25px;
+}
+.main-container .middle-content .middle-content-section li {
+  border-top: 2px solid lightgray;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+.main-container .middle-content .middle-content-section ul {
+  border: 2px solid lightgray;
+  border-radius: 5px;
+}
+.main-container table {
+  border: 2px solid lightgray;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  text-align: left;
+}
+.main-container table th {
+  font-weight: bold;
+}
+.main-container table .even-row {
+  background: lightgray;
+}
+.main-container footer {
+  display: flex;
+  justify-content: center;
+}
