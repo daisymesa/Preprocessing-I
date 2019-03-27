@@ -84,6 +84,7 @@ html, body {
 	margin: 25px;
 	padding: 25px;
 	line-height: 1.5;
+	margin: 25px auto;
 
 	//NESTED STYLES
 	header {
@@ -127,8 +128,8 @@ html, body {
 
 		button {
 			font-family: @default-font;
-			font-size: .75rem;
-			padding: 5px 0;
+			font-size: 1rem;
+			padding: 10px 25px;
 			margin: 15px 0;
 		}
 	}
@@ -145,12 +146,11 @@ html, body {
 			width: 49%;
 			padding: 25px;
 			li {
-				border-top: @border-default;
+				border: @border-default;
 				padding: 10px;
 				font-family: @default-font;
 			}
 			ul {
-				border: @border-default;
 				border-radius: 5px;
 			}
 		}		
@@ -162,18 +162,20 @@ html, body {
 		width: 100%;
 		text-align: left;
 
+
 		th {
 			font-weight: bold;
 		}
+
 		.even-row {
 			background: lightgray;
+			
 		}
 	}
 
-
 	footer {
 		.center-horizontal;
+		padding-top: 25px;
 	}
-
 
 }
