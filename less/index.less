@@ -59,8 +59,6 @@ html, body {
 
 }
 
-
-
 .main-container {
 
 	//MIXINS
@@ -74,53 +72,82 @@ html, body {
 		align-content: center;
 	}
 
+	.color-section () {
+		background: #EF767A;
+		color: white;
+	}
+
 	//VARIABLES
 	@default-font: "Open Sans", sans-serif;
-	@border-default: 2px solid lightgray;
+	@border-default: 2px solid #2e3842;
 
 	//MAIN CONTAINER STYLES
-	width: 75%;
-	margin: 25px;
+	width: 90%;
 	padding: 25px;
 	line-height: 1.5;
-	margin: 25px auto;
+	margin: 0 auto;
+
+	@media (max-width: 500px) {
+		width: 100%;
+	}	
 
 	//NESTED STYLES
 	header {
 		display: flex;
 		justify-content: flex-end;
 		font-family: @default-font;
-		margin-bottom: 25px;
+		padding: 25px 0;
+		background: #2e3842;
+		border-radius: 10px;
 
 		a {
+			@media (max-width: 500px) {
+				display: inline;
+				padding: 10px;
+			}
+
 			padding: 25px;
 			text-decoration: none;
-			color: black;
+			color: white;
 		}
 	}
 
+	a:hover {
+		color: #EF767A;
+	}
+
 	.headshot {
+		@media (max-width: 500px) {
+			height:175px;
+		}
+
 		height: 300px;
+		border-radius: 50%;
+		margin: 0 auto;
+		padding-right: 25px;
+	}
+
+	h1, h2, p {
+		font-family: @default-font;
 	}
 
 	h1 {
-		font-family: @default-font;
 		font-size: 2.5rem;
 	}
 
 	h2 {
-		font-family: @default-font;
 		font-size: 1.5rem;
 	}
 
-	p {
-		font-family: @default-font;
-	}
-
-
 	.top-section {
-		background: lightgray;
-		border-radius: 5px;
+		@media (max-width: 500px) {
+			display: block;
+		}
+
+		display: flex;
+
+		.color-section;
+		border-radius: 10px;
 		padding: 25px;
 
 		button {
@@ -128,26 +155,46 @@ html, body {
 			font-size: 1rem;
 			padding: 10px 25px;
 			margin: 15px 0;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+
+		.intro-text {
+			width: 50%;
+			padding: 15px;
+
+			@media (max-width: 500px) {
+				width: 100%;
+			}	
 		}
 	}
 
 	.middle-content {
+		@media (max-width: 500px) {
+			display: block;
+		}
+
 		display: flex;
 
 		h2 {
 			font-weight: bold;
 		}
-		
+
 		.middle-content-section{
+			@media (max-width: 500px) {
+				width: 100%;
+			}	
+
 			width: 49%;
 			padding: 25px;
+
 			li {
-				border: @border-default;
+				border-top: @border-default;
 				padding: 10px;
 				font-family: @default-font;
 			}
 			ul {
-				border-radius: 5px;
+				border-bottom: @border-default;
 			}
 		}		
 	}
@@ -155,29 +202,25 @@ html, body {
 	table {
 		border: @border-default;
 		font-family: @default-font;
-		width: 100%;
+		width: 95%;
 		margin: 0 auto;
 		text-align: left;
-
 
 		th {
 			font-weight: bold;
 		}
 
 		.even-row {
-			background: lightgray;
-			
+			background: #2e3842;
+			color: white;
 		}
 	}
 
 	footer {
 		.center-horizontal;
-		padding-top: 25px;
+		.color-section;
+		margin-top: 25px;
+		padding: 15px 0;
+		border-radius: 10px;
 	}
-
-	@media(max-width 500px) {
-		max-width: 100%;
-		padding: 10px;
-	}
-
 }
